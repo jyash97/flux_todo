@@ -10,6 +10,14 @@ class AddItem extends React.Component{
       text:''
     };
     this.handleText = this.handleText.bind(this);
+    this.handleEnter = this.handleEnter.bind(this);
+    this.handleAdd = this.handleAdd.bind(this);
+  }
+
+  handleEnter(e){
+    if(e.key === 'Enter'){
+      this.handleAdd();
+    };
   }
 
   handleText(e){
@@ -28,8 +36,8 @@ class AddItem extends React.Component{
   render(){
     return(
       <div className='add-task'>
-        <input type="text" placeholder='Enter New task' onChange={this.handleText}/>
-        <button onClick={()=>this.handleAdd()}>New Task +</button>
+        <input type="text" placeholder='Enter New task' value={this.state.text} onKeyPress={this.handleEnter} onChange={this.handleText}/>
+        <button onClick={this.handleAdd}>New Task +</button>
       </div>
     )
   }
