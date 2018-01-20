@@ -1,0 +1,97 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.container{
+  width: 50%;
+  font-family: sans-serif;
+  margin:10px auto;
+  border: 1px solid #494949;
+  padding: 20px;
+}
+
+.container h1{
+  color: #7C7A7A;
+  font-size: 25px;
+  margin: 10px 0px;
+}
+
+.task-container{
+  margin:20px auto;
+}
+
+.task-container h1{
+  font-weight: 600;
+  color: #494949;
+  margin: 10px auto;
+  text-transform: uppercase;
+  border-bottom: 2px solid #494949;
+  padding: 5px 2px;
+  font-size: 16px;
+}
+
+.task{
+  background: rgba(255, 93, 115, 0.2);
+  border: 1px solid rgba(255, 93, 115, 0.8);
+  padding: 5px;
+  color: #494949;
+  margin: 5px;
+}
+
+.task p{
+  display: inline-block;
+}
+
+.task button{
+  float: right;
+  background-color: rgba(255,93,115,.8);
+  color: #ffffff;
+  border: 1px solid rgba(255,255,255,.8);
+  border-radius: 10%;
+  padding: 1px 4px;
+  font-size: 11px;
+  margin: 0px 5px;
+  cursor: pointer;
+  outline: none;
+  transition: all ease .2s;
+}
+
+.task button:hover{
+  transform: scale(1.1);
+  box-shadow: 1px 1px 5px 0px rgba(124,122,122,0.4);
+}
+
+.add-task{
+  overflow: hidden;
+  width: 100%;
+}
+
+.add-task input{
+  width: 80%;
+  border: 2px solid rgba(255,93,115,.5);
+  transition: all ease .1s;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.add-task input:focus{
+  outline: none;
+  border: 2px solid rgba(255,93,115,.95);
+}
+
+.add-task button{
+  width: 20%;
+  cursor: pointer;
+  color: #494949;
+  background-color: white;
+  border: 2px solid rgba(255,93,115,.5);
+  padding: 5px;
+  transition: all ease .15s;
+}
+
+.add-task button:hover{
+  background: rgba(255,93,115,.8);
+  color: white;
+  border: 2px solid rgba(124,122,122,.5);
+}
